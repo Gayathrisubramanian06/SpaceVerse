@@ -1,0 +1,162 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Global Safety Net: default deny everything
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() >= 1 && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function isValidUsernameId(uname) {
+      return uname is string && uname.size() >= 3 && uname.size() <= 24 && uname.matches('^[a-z0-9_\\-]+$');
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+
+    function isValidUsernameDoc(data) {
+      return data.keys().hasAll(['uid', 'username', 'createdAt'])
+        && data.keys().hasOnly(['uid', 'username', 'createdAt'])
+        && data.uid is string && data.uid == request.auth.uid && data.uid.size() >= 1 && data.uid.size() <= 128
+        && data.username is string && data.username.size() >= 3 && data.username.size() <= 24 && data.username.matches('^[a-zA-Z0-9_\\-]+$')
+        && data.createdAt is timestamp;
+    }
+
+    function isValidPlayerProfile(data) {
+      return data.keys().hasAll([
+        'uid', 'username', 'usernameLower', 'email', 'callsign',
+        'joined', 'trainingCompleted', 'currentCampaignLevel', 'currentMissionStage',
+        'completedLevels', 'unlockedLevels', 'levelStars', 'totalStars', 'levelScores',
+        'grantCredits', 'starCredits', 'xp', 'badges',
+        'propulsionUpgradeUnlocked', 'level5FlybyCompleted', 'level5BestFuelKg',
+        'unlockedStoreItems', 'rewardsCollected', 'transactions',
+        'level1Progress', 'level2Progress', 'level4Progress',
+        'level6Progress', 'level7Progress', 'level8Progress',
+        'createdAt', 'lastSavedAt', 'updatedAt'
+      ])
+      && data.keys().hasOnly([
+        'uid', 'username', 'usernameLower', 'email', 'callsign',
+        'joined', 'trainingCompleted', 'currentCampaignLevel', 'currentMissionStage',
+        'completedLevels', 'unlockedLevels', 'levelStars', 'totalStars', 'levelScores',
+        'grantCredits', 'starCredits', 'xp', 'badges',
+        'propulsionUpgradeUnlocked', 'level5FlybyCompleted', 'level5BestFuelKg',
+        'unlockedStoreItems', 'rewardsCollected', 'transactions',
+        'level1Progress', 'level2Progress', 'level4Progress',
+        'level6Progress', 'level7Progress', 'level8Progress',
+        'createdAt', 'lastSavedAt', 'updatedAt'
+      ])
+      && data.uid is string && data.uid == request.auth.uid && data.uid.size() >= 1 && data.uid.size() <= 128
+      && data.username is string && data.username.size() >= 3 && data.username.size() <= 24 && data.username.matches('^[a-zA-Z0-9_\\-]+$')
+      && data.usernameLower is string && data.usernameLower.size() >= 3 && data.usernameLower.size() <= 24 && data.usernameLower.matches('^[a-z0-9_\\-]+$')
+      && data.email is string && data.email.size() >= 3 && data.email.size() <= 160
+      && data.callsign is string && data.callsign.size() >= 1 && data.callsign.size() <= 64
+      && data.joined is bool
+      && data.trainingCompleted is bool
+      && data.currentCampaignLevel is int && data.currentCampaignLevel >= 1 && data.currentCampaignLevel <= 8
+      && data.currentMissionStage is int && data.currentMissionStage >= 0 && data.currentMissionStage <= 20
+      && data.completedLevels is list && data.completedLevels.size() <= 8
+      && (data.completedLevels.size() == 0 || data.completedLevels[0] is int)
+      && data.unlockedLevels is list && data.unlockedLevels.size() >= 1 && data.unlockedLevels.size() <= 8
+      && data.unlockedLevels[0] is int
+      && data.levelStars is map
+      && data.totalStars is int && data.totalStars >= 0 && data.totalStars <= 24
+      && data.levelScores is map
+      && data.grantCredits is int && data.grantCredits >= 0 && data.grantCredits <= 10000000
+      && data.starCredits is int && data.starCredits >= 0 && data.starCredits <= 10000000
+      && data.xp is int && data.xp >= 0 && data.xp <= 10000000
+      && data.badges is list && data.badges.size() <= 32
+      && (data.badges.size() == 0 || data.badges[0] is string)
+      && data.propulsionUpgradeUnlocked is bool
+      && data.level5FlybyCompleted is bool
+      && (data.level5BestFuelKg == null || (data.level5BestFuelKg is number && data.level5BestFuelKg >= 0 && data.level5BestFuelKg <= 500))
+      && data.unlockedStoreItems is list && data.unlockedStoreItems.size() <= 32
+      && (data.unlockedStoreItems.size() == 0 || data.unlockedStoreItems[0] is string)
+      && data.rewardsCollected is list && data.rewardsCollected.size() <= 100
+      && (data.rewardsCollected.size() == 0 || data.rewardsCollected[0] is string)
+      && data.transactions is list && data.transactions.size() <= 100
+      && (data.transactions.size() == 0 || data.transactions[0] is map)
+      && data.level1Progress is map
+      && data.level2Progress is map
+      && data.level4Progress is map
+      && data.level6Progress is map
+      && data.level7Progress is map
+      && data.level8Progress is map
+      && data.createdAt is timestamp
+      && data.lastSavedAt is timestamp
+      && data.updatedAt is timestamp;
+    }
+
+    function isProgressUpdateAction() {
+      return incoming().diff(existing()).affectedKeys().hasOnly([
+        'joined', 'trainingCompleted', 'currentCampaignLevel', 'currentMissionStage',
+        'completedLevels', 'unlockedLevels', 'levelStars', 'totalStars', 'levelScores',
+        'grantCredits', 'starCredits', 'xp', 'badges',
+        'propulsionUpgradeUnlocked', 'level5FlybyCompleted', 'level5BestFuelKg',
+        'unlockedStoreItems', 'rewardsCollected', 'transactions',
+        'level1Progress', 'level2Progress', 'level4Progress',
+        'level6Progress', 'level7Progress', 'level8Progress',
+        'lastSavedAt', 'updatedAt'
+      ]);
+    }
+
+    function isProfileIdentitySyncAction() {
+      return incoming().diff(existing()).affectedKeys().hasOnly([
+        'email', 'callsign', 'lastSavedAt', 'updatedAt'
+      ]);
+    }
+
+    match /players/{userId} {
+      allow get: if isSignedIn() && isValidId(userId) && isOwner(userId);
+      allow list: if false;
+      allow create: if isSignedIn()
+        && isValidId(userId)
+        && isOwner(userId)
+        && isValidPlayerProfile(incoming())
+        && incoming().createdAt == request.time
+        && incoming().lastSavedAt == request.time
+        && incoming().updatedAt == request.time;
+      allow update: if isSignedIn()
+        && isValidId(userId)
+        && isOwner(userId)
+        && isValidPlayerProfile(incoming())
+        && incoming().uid == existing().uid
+        && incoming().username == existing().username
+        && incoming().usernameLower == existing().usernameLower
+        && incoming().createdAt == existing().createdAt
+        && incoming().lastSavedAt == request.time
+        && incoming().updatedAt == request.time
+        && (isProgressUpdateAction() || isProfileIdentitySyncAction());
+      allow delete: if isSignedIn() && isValidId(userId) && isOwner(userId);
+    }
+
+    match /usernames/{usernameLower} {
+      allow get: if isSignedIn() && isValidUsernameId(usernameLower);
+      allow list: if false;
+      allow create: if isSignedIn()
+        && isValidUsernameId(usernameLower)
+        && isValidUsernameDoc(incoming())
+        && incoming().username.lower() == usernameLower
+        && incoming().createdAt == request.time;
+      allow update: if false;
+      allow delete: if isSignedIn()
+        && isValidUsernameId(usernameLower)
+        && existing().uid == request.auth.uid;
+    }
+  }
+}

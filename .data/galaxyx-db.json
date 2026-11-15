@@ -1,0 +1,1705 @@
+{
+  "users": {
+    "explorer-default": {
+      "userId": "explorer-default",
+      "callsign": "Explorer-01",
+      "joined": true,
+      "trainingCompleted": true,
+      "currentCampaignLevel": 8,
+      "completedLevels": [
+        1,
+        2
+      ],
+      "levelScores": {
+        "1": 1000,
+        "2": 1000
+      },
+      "grantCredits": 10000,
+      "starCredits": 2500,
+      "xp": 0,
+      "badges": [
+        "NEW_RECRUIT",
+        "MISSION_ARCHITECT",
+        "SATELLITE_BUILDER",
+        "ROCKET_COMMANDER"
+      ],
+      "transactions": [
+        {
+          "id": "tx_1794720896448_recruit",
+          "key": "explorer-default:NEW_RECRUIT",
+          "type": "NEW_RECRUIT",
+          "amountStarCredits": 500,
+          "amountGrantCredits": 10000,
+          "badge": "NEW_RECRUIT",
+          "note": "GALAXY-X New Recruit Commission",
+          "timestamp": "2026-11-15T05:34:56.448Z"
+        },
+        {
+          "id": "tx_1794720968854_lvl1",
+          "key": "explorer-default:LEVEL_1_COMPLETE",
+          "type": "LEVEL_1_COMPLETION",
+          "amountStarCredits": 1000,
+          "amountGrantCredits": 0,
+          "badge": "SATELLITE_BUILDER",
+          "note": "Level 1: Satellite Assembly Reward",
+          "timestamp": "2026-11-15T05:36:08.854Z"
+        },
+        {
+          "id": "tx_1794721098189_lvl2",
+          "key": "explorer-default:LEVEL_2_COMPLETE",
+          "type": "LEVEL_2_COMPLETION",
+          "amountStarCredits": 1000,
+          "amountGrantCredits": 0,
+          "badge": "ROCKET_COMMANDER",
+          "note": "Level 2: Rocket Assembly & Orbital Launch Reward",
+          "timestamp": "2026-11-15T05:38:18.189Z"
+        }
+      ],
+      "level1Progress": {
+        "stage": 1,
+        "satParts": [
+          "bus",
+          "solar",
+          "battery",
+          "antenna",
+          "camera",
+          "propulsion",
+          "computer",
+          "adcs",
+          "thermal"
+        ],
+        "rocketParts": [],
+        "stage1Done": true,
+        "stage2Done": false,
+        "stage3Done": false,
+        "stage4Done": false,
+        "stage5Done": false,
+        "launchStatus": "not_started"
+      },
+      "level2Progress": {
+        "stage": 4,
+        "rocketParts": [
+          "first_stage_structure",
+          "first_stage_tanks",
+          "first_stage_engines",
+          "interstage",
+          "second_stage_body",
+          "second_stage_engine",
+          "avionics",
+          "grid_fins",
+          "landing_legs",
+          "payload_fairing"
+        ],
+        "stage1Done": true,
+        "stage2Done": true,
+        "stage3Done": true,
+        "stage4Done": true,
+        "launchStatus": "completed"
+      },
+      "level4Progress": {
+        "stage": 1,
+        "installedParts": [],
+        "totalMassKg": 400,
+        "shakerResult": "pending",
+        "shakerScore": 30,
+        "shakerSignature": "",
+        "freezerResult": "pending",
+        "freezerMinTempC": null,
+        "freezerFinalTempC": null,
+        "freezerSignature": "",
+        "finalQualified": false
+      },
+      "updatedAt": "2026-11-15T13:33:42.856Z",
+      "propulsionUpgradeUnlocked": false,
+      "level5FlybyCompleted": false,
+      "level5BestFuelKg": null,
+      "unlockedStoreItems": [],
+      "level6Progress": {
+        "stage": 0,
+        "probeBuild": {
+          "body": "body_alu",
+          "legs": "legs_skid",
+          "sensor": "sensor_thermo",
+          "battery": "bat_zinc",
+          "heater": "heat_strip",
+          "antenna": "ant_whip"
+        },
+        "calibrationSolvedIds": [],
+        "rocketParts": [],
+        "rocketStage": 1,
+        "launchCompleted": false,
+        "landingSolved": {
+          "speed": false,
+          "tilt": false,
+          "thermal": false
+        },
+        "landed": false,
+        "collectedReadings": [],
+        "transmittedPackets": 0,
+        "missionStartedAtMs": null,
+        "missionDeadlineMs": null,
+        "timerExpired": false
+      },
+      "level7Progress": {
+        "stage": 0,
+        "satBuild": {
+          "body": "sat_body_frame",
+          "antenna": "sat_ant_dipole",
+          "solar": "sat_solar_compact",
+          "battery": "sat_bat_small",
+          "processor": "sat_proc_legacy",
+          "thermal": "sat_therm_foil",
+          "radiation": "sat_rad_thin"
+        },
+        "equippedStoreGear": [],
+        "testsPassed": {
+          "power": false,
+          "comms": false,
+          "survival": false
+        },
+        "rocketParts": [],
+        "rocketStage": 1,
+        "launchCompleted": false,
+        "testedLinks": {},
+        "rescueRestored": false,
+        "missionStartedAtMs": null,
+        "missionDeadlineMs": null,
+        "timerExpired": false
+      },
+      "level8Progress": {
+        "stage": 2,
+        "build": {
+          "body": "l_body_alu",
+          "instruments": "l_inst_cam",
+          "comms": "l_comms_whip",
+          "power": "l_pow_strip",
+          "propulsion": "l_prop_cold",
+          "navigation": "l_nav_gyro",
+          "fuel": "l_fuel_std",
+          "fuelMassKg": 74
+        },
+        "fuelTestPassed": false,
+        "rocketParts": [],
+        "rocketStage": 1,
+        "launchCompleted": false,
+        "navHeadingDeg": 14,
+        "navOrbitLocked": false,
+        "craterScans": [],
+        "evidenceMeterPct": 0,
+        "transmittedPct": 0,
+        "transmissionInterrupted": false,
+        "missionStartedAtMs": 1794749557440,
+        "missionDeadlineMs": 1794750157440,
+        "timerExpired": false
+      }
+    },
+    "verify-lvl3-1794720856107": {
+      "userId": "verify-lvl3-1794720856107",
+      "callsign": "VerifyOrbit",
+      "joined": true,
+      "trainingCompleted": false,
+      "currentCampaignLevel": 4,
+      "completedLevels": [
+        1,
+        2,
+        3
+      ],
+      "levelScores": {
+        "1": 1000,
+        "2": 1000,
+        "3": 1000
+      },
+      "grantCredits": 10000,
+      "starCredits": 3500,
+      "xp": 0,
+      "badges": [
+        "NEW_RECRUIT",
+        "SATELLITE_BUILDER",
+        "ROCKET_COMMANDER",
+        "ORBIT_POWER_ENGINEER"
+      ],
+      "transactions": [
+        {
+          "id": "tx_1794720856255_recruit",
+          "key": "verify-lvl3-1794720856107:NEW_RECRUIT",
+          "type": "NEW_RECRUIT",
+          "amountStarCredits": 500,
+          "amountGrantCredits": 10000,
+          "badge": "NEW_RECRUIT",
+          "note": "GALAXY-X New Recruit Commission",
+          "timestamp": "2026-11-15T05:34:16.255Z"
+        },
+        {
+          "id": "tx_1794720856269_lvl1",
+          "key": "verify-lvl3-1794720856107:LEVEL_1_COMPLETE",
+          "type": "LEVEL_1_COMPLETION",
+          "amountStarCredits": 1000,
+          "amountGrantCredits": 0,
+          "badge": "SATELLITE_BUILDER",
+          "note": "Level 1: Satellite Assembly Reward",
+          "timestamp": "2026-11-15T05:34:16.269Z"
+        },
+        {
+          "id": "tx_1794720856276_lvl2",
+          "key": "verify-lvl3-1794720856107:LEVEL_2_COMPLETE",
+          "type": "LEVEL_2_COMPLETION",
+          "amountStarCredits": 1000,
+          "amountGrantCredits": 0,
+          "badge": "ROCKET_COMMANDER",
+          "note": "Level 2: Rocket Assembly & Orbital Launch Reward",
+          "timestamp": "2026-11-15T05:34:16.276Z"
+        },
+        {
+          "id": "tx_1794720856290_lvl3",
+          "key": "verify-lvl3-1794720856107:LEVEL_3_COMPLETE",
+          "type": "LEVEL_3_COMPLETION",
+          "amountStarCredits": 1000,
+          "amountGrantCredits": 0,
+          "badge": "ORBIT_POWER_ENGINEER",
+          "note": "Level 3: Orbit & Power Management Reward",
+          "timestamp": "2026-11-15T05:34:16.290Z"
+        }
+      ],
+      "level1Progress": {
+        "stage": 1,
+        "satParts": [
+          "bus",
+          "solar",
+          "battery",
+          "antenna",
+          "camera",
+          "propulsion",
+          "computer",
+          "adcs",
+          "thermal"
+        ],
+        "rocketParts": [],
+        "stage1Done": true,
+        "stage2Done": false,
+        "stage3Done": false,
+        "stage4Done": false,
+        "stage5Done": false,
+        "launchStatus": "not_started"
+      },
+      "level2Progress": {
+        "stage": 4,
+        "rocketParts": [
+          "first_stage_structure",
+          "first_stage_tanks",
+          "first_stage_engines",
+          "interstage",
+          "second_stage_body",
+          "second_stage_engine",
+          "avionics",
+          "grid_fins",
+          "landing_legs",
+          "payload_fairing"
+        ],
+        "stage1Done": true,
+        "stage2Done": true,
+        "stage3Done": true,
+        "stage4Done": true,
+        "launchStatus": "completed"
+      },
+      "level4Progress": {
+        "stage": 1,
+        "installedParts": [],
+        "totalMassKg": 400,
+        "shakerResult": "pending",
+        "shakerScore": 30,
+        "shakerSignature": "",
+        "freezerResult": "pending",
+        "freezerMinTempC": null,
+        "freezerFinalTempC": null,
+        "freezerSignature": "",
+        "finalQualified": false
+      },
+      "updatedAt": "2026-11-15T05:34:16.295Z"
+    },
+    "verify-lvl4-1794721103474": {
+      "userId": "verify-lvl4-1794721103474",
+      "callsign": "Explorer-01",
+      "joined": false,
+      "trainingCompleted": false,
+      "currentCampaignLevel": 1,
+      "completedLevels": [],
+      "levelScores": {},
+      "grantCredits": 10000,
+      "starCredits": 0,
+      "xp": 0,
+      "badges": [],
+      "transactions": [],
+      "level1Progress": {
+        "stage": 1,
+        "satParts": [],
+        "rocketParts": [],
+        "stage1Done": false,
+        "stage2Done": false,
+        "stage3Done": false,
+        "stage4Done": false,
+        "stage5Done": false,
+        "launchStatus": "not_started"
+      },
+      "level2Progress": {
+        "stage": 1,
+        "rocketParts": [],
+        "stage1Done": false,
+        "stage2Done": false,
+        "stage3Done": false,
+        "stage4Done": false,
+        "launchStatus": "not_started"
+      },
+      "level4Progress": {
+        "stage": 1,
+        "installedParts": [],
+        "totalMassKg": 400,
+        "shakerResult": "pending",
+        "shakerScore": 30,
+        "shakerSignature": "",
+        "freezerResult": "pending",
+        "freezerMinTempC": null,
+        "freezerFinalTempC": null,
+        "freezerSignature": "",
+        "finalQualified": false
+      },
+      "updatedAt": "2026-11-15T05:38:23.650Z"
+    },
+    "verify-lvl4-1794721119931": {
+      "userId": "verify-lvl4-1794721119931",
+      "callsign": "Explorer-01",
+      "joined": false,
+      "trainingCompleted": false,
+      "currentCampaignLevel": 1,
+      "completedLevels": [],
+      "levelScores": {},
+      "grantCredits": 10000,
+      "starCredits": 0,
+      "xp": 0,
+      "badges": [],
+      "transactions": [],
+      "level1Progress": {
+        "stage": 1,
+        "satParts": [],
+        "rocketParts": [],
+        "stage1Done": false,
+        "stage2Done": false,
+        "stage3Done": false,
+        "stage4Done": false,
+        "stage5Done": false,
+        "launchStatus": "not_started"
+      },
+      "level2Progress": {
+        "stage": 1,
+        "rocketParts": [],
+        "stage1Done": false,
+        "stage2Done": false,
+        "stage3Done": false,
+        "stage4Done": false,
+        "launchStatus": "not_started"
+      },
+      "level4Progress": {
+        "stage": 1,
+        "installedParts": [],
+        "totalMassKg": 400,
+        "shakerResult": "pending",
+        "shakerScore": 30,
+        "shakerSignature": "",
+        "freezerResult": "pending",
+        "freezerMinTempC": null,
+        "freezerFinalTempC": null,
+        "freezerSignature": "",
+        "finalQualified": false
+      },
+      "updatedAt": "2026-11-15T05:38:40.055Z"
+    },
+    "verify-lvl4-1794721137016": {
+      "userId": "verify-lvl4-1794721137016",
+      "callsign": "Explorer-01",
+      "joined": false,
+      "trainingCompleted": false,
+      "currentCampaignLevel": 4,
+      "completedLevels": [
+        3
+      ],
+      "levelScores": {
+        "3": 1000
+      },
+      "grantCredits": 10000,
+      "starCredits": 1000,
+      "xp": 0,
+      "badges": [
+        "ORBIT_POWER_ENGINEER"
+      ],
+      "transactions": [
+        {
+          "id": "tx_1794721137156_lvl3",
+          "key": "verify-lvl4-1794721137016:LEVEL_3_COMPLETE",
+          "type": "LEVEL_3_COMPLETION",
+          "amountStarCredits": 1000,
+          "amountGrantCredits": 0,
+          "badge": "ORBIT_POWER_ENGINEER",
+          "note": "Level 3: Orbit & Power Management Reward",
+          "timestamp": "2026-11-15T05:38:57.156Z"
+        }
+      ],
+      "level1Progress": {
+        "stage": 1,
+        "satParts": [],
+        "rocketParts": [],
+        "stage1Done": false,
+        "stage2Done": false,
+        "stage3Done": false,
+        "stage4Done": false,
+        "stage5Done": false,
+        "launchStatus": "not_started"
+      },
+      "level2Progress": {
+        "stage": 1,
+        "rocketParts": [],
+        "stage1Done": false,
+        "stage2Done": false,
+        "stage3Done": false,
+        "stage4Done": false,
+        "launchStatus": "not_started"
+      },
+      "level4Progress": {
+        "stage": 1,
+        "installedParts": [],
+        "totalMassKg": 400,
+        "shakerResult": "pending",
+        "shakerScore": 30,
+        "shakerSignature": "",
+        "freezerResult": "pending",
+        "freezerMinTempC": null,
+        "freezerFinalTempC": null,
+        "freezerSignature": "",
+        "finalQualified": false
+      },
+      "updatedAt": "2026-11-15T05:38:57.156Z"
+    },
+    "verify-lvl4-1794721156136": {
+      "userId": "verify-lvl4-1794721156136",
+      "callsign": "Explorer-01",
+      "joined": false,
+      "trainingCompleted": false,
+      "currentCampaignLevel": 4,
+      "completedLevels": [
+        3
+      ],
+      "levelScores": {
+        "3": 1000
+      },
+      "grantCredits": 10000,
+      "starCredits": 1000,
+      "xp": 0,
+      "badges": [
+        "ORBIT_POWER_ENGINEER"
+      ],
+      "transactions": [
+        {
+          "id": "tx_1794721156281_lvl3",
+          "key": "verify-lvl4-1794721156136:LEVEL_3_COMPLETE",
+          "type": "LEVEL_3_COMPLETION",
+          "amountStarCredits": 1000,
+          "amountGrantCredits": 0,
+          "badge": "ORBIT_POWER_ENGINEER",
+          "note": "Level 3: Orbit & Power Management Reward",
+          "timestamp": "2026-11-15T05:39:16.281Z"
+        }
+      ],
+      "level1Progress": {
+        "stage": 1,
+        "satParts": [],
+        "rocketParts": [],
+        "stage1Done": false,
+        "stage2Done": false,
+        "stage3Done": false,
+        "stage4Done": false,
+        "stage5Done": false,
+        "launchStatus": "not_started"
+      },
+      "level2Progress": {
+        "stage": 1,
+        "rocketParts": [],
+        "stage1Done": false,
+        "stage2Done": false,
+        "stage3Done": false,
+        "stage4Done": false,
+        "launchStatus": "not_started"
+      },
+      "level4Progress": {
+        "stage": 1,
+        "installedParts": [],
+        "totalMassKg": 400,
+        "shakerResult": "pending",
+        "shakerScore": 30,
+        "shakerSignature": "",
+        "freezerResult": "pending",
+        "freezerMinTempC": null,
+        "freezerFinalTempC": null,
+        "freezerSignature": "",
+        "finalQualified": false
+      },
+      "updatedAt": "2026-11-15T05:39:16.281Z"
+    },
+    "verify-lvl4-1794721172650": {
+      "userId": "verify-lvl4-1794721172650",
+      "callsign": "VerifyCadet",
+      "joined": true,
+      "trainingCompleted": true,
+      "currentCampaignLevel": 5,
+      "completedLevels": [
+        3,
+        4
+      ],
+      "levelScores": {
+        "3": 1000,
+        "4": 750
+      },
+      "grantCredits": 10000,
+      "starCredits": 2250,
+      "xp": 100,
+      "badges": [
+        "NEW_RECRUIT",
+        "MISSION_ARCHITECT",
+        "ORBIT_POWER_ENGINEER",
+        "THERMAL_PROTECTION_ENGINEER"
+      ],
+      "transactions": [
+        {
+          "id": "tx_1794721172773_recruit",
+          "key": "verify-lvl4-1794721172650:NEW_RECRUIT",
+          "type": "NEW_RECRUIT",
+          "amountStarCredits": 500,
+          "amountGrantCredits": 10000,
+          "badge": "NEW_RECRUIT",
+          "note": "GALAXY-X New Recruit Commission",
+          "timestamp": "2026-11-15T05:39:32.773Z"
+        },
+        {
+          "id": "tx_1794721172787_lvl3",
+          "key": "verify-lvl4-1794721172650:LEVEL_3_COMPLETE",
+          "type": "LEVEL_3_COMPLETION",
+          "amountStarCredits": 1000,
+          "amountGrantCredits": 0,
+          "badge": "ORBIT_POWER_ENGINEER",
+          "note": "Level 3: Orbit & Power Management Reward",
+          "timestamp": "2026-11-15T05:39:32.787Z"
+        },
+        {
+          "id": "tx_1794721172814_lvl4",
+          "key": "verify-lvl4-1794721172650:LEVEL_4_COMPLETE",
+          "type": "LEVEL_4_COMPLETION",
+          "amountStarCredits": 750,
+          "amountGrantCredits": 0,
+          "amountXp": 100,
+          "badge": "THERMAL_PROTECTION_ENGINEER",
+          "note": "Level 4: Shake & Freeze Qualification Reward",
+          "timestamp": "2026-11-15T05:39:32.814Z"
+        }
+      ],
+      "level1Progress": {
+        "stage": 1,
+        "satParts": [],
+        "rocketParts": [],
+        "stage1Done": false,
+        "stage2Done": false,
+        "stage3Done": false,
+        "stage4Done": false,
+        "stage5Done": false,
+        "launchStatus": "not_started"
+      },
+      "level2Progress": {
+        "stage": 1,
+        "rocketParts": [],
+        "stage1Done": false,
+        "stage2Done": false,
+        "stage3Done": false,
+        "stage4Done": false,
+        "launchStatus": "not_started"
+      },
+      "level4Progress": {
+        "stage": 1,
+        "installedParts": [],
+        "totalMassKg": 400,
+        "shakerResult": "pending",
+        "shakerScore": 30,
+        "shakerSignature": "",
+        "freezerResult": "pending",
+        "freezerMinTempC": null,
+        "freezerFinalTempC": null,
+        "freezerSignature": "",
+        "finalQualified": false
+      },
+      "updatedAt": "2026-11-15T05:39:32.836Z"
+    },
+    "verify-nav-1794721462167": {
+      "userId": "verify-nav-1794721462167",
+      "callsign": "TestPilot",
+      "joined": true,
+      "trainingCompleted": false,
+      "currentCampaignLevel": 1,
+      "completedLevels": [],
+      "levelScores": {},
+      "grantCredits": 10000,
+      "starCredits": 500,
+      "xp": 0,
+      "badges": [
+        "NEW_RECRUIT"
+      ],
+      "transactions": [
+        {
+          "id": "tx_1794721462354_recruit",
+          "key": "verify-nav-1794721462167:NEW_RECRUIT",
+          "type": "NEW_RECRUIT",
+          "amountStarCredits": 500,
+          "amountGrantCredits": 10000,
+          "badge": "NEW_RECRUIT",
+          "note": "GALAXY-X New Recruit Commission",
+          "timestamp": "2026-11-15T05:44:22.354Z"
+        }
+      ],
+      "level1Progress": {
+        "stage": 1,
+        "satParts": [],
+        "rocketParts": [],
+        "stage1Done": false,
+        "stage2Done": false,
+        "stage3Done": false,
+        "stage4Done": false,
+        "stage5Done": false,
+        "launchStatus": "not_started"
+      },
+      "level2Progress": {
+        "stage": 1,
+        "rocketParts": [],
+        "stage1Done": false,
+        "stage2Done": false,
+        "stage3Done": false,
+        "stage4Done": false,
+        "launchStatus": "not_started"
+      },
+      "level4Progress": {
+        "stage": 1,
+        "installedParts": [],
+        "totalMassKg": 400,
+        "shakerResult": "pending",
+        "shakerScore": 30,
+        "shakerSignature": "",
+        "freezerResult": "pending",
+        "freezerMinTempC": null,
+        "freezerFinalTempC": null,
+        "freezerSignature": "",
+        "finalQualified": false
+      },
+      "updatedAt": "2026-11-15T05:44:22.354Z"
+    },
+    "verify-nav-1794721471640": {
+      "userId": "verify-nav-1794721471640",
+      "callsign": "TestPilot",
+      "joined": true,
+      "trainingCompleted": false,
+      "currentCampaignLevel": 5,
+      "completedLevels": [
+        1,
+        2,
+        3
+      ],
+      "levelScores": {
+        "1": 1000,
+        "2": 1000,
+        "3": 1000
+      },
+      "grantCredits": 10000,
+      "starCredits": 3500,
+      "xp": 0,
+      "badges": [
+        "NEW_RECRUIT",
+        "SATELLITE_BUILDER",
+        "ROCKET_COMMANDER",
+        "ORBIT_POWER_ENGINEER"
+      ],
+      "transactions": [
+        {
+          "id": "tx_1794721471802_recruit",
+          "key": "verify-nav-1794721471640:NEW_RECRUIT",
+          "type": "NEW_RECRUIT",
+          "amountStarCredits": 500,
+          "amountGrantCredits": 10000,
+          "badge": "NEW_RECRUIT",
+          "note": "GALAXY-X New Recruit Commission",
+          "timestamp": "2026-11-15T05:44:31.802Z"
+        },
+        {
+          "id": "tx_1794721471808_lvl1",
+          "key": "verify-nav-1794721471640:LEVEL_1_COMPLETE",
+          "type": "LEVEL_1_COMPLETION",
+          "amountStarCredits": 1000,
+          "amountGrantCredits": 0,
+          "badge": "SATELLITE_BUILDER",
+          "note": "Level 1: Satellite Assembly Reward",
+          "timestamp": "2026-11-15T05:44:31.808Z"
+        },
+        {
+          "id": "tx_1794721471814_lvl2",
+          "key": "verify-nav-1794721471640:LEVEL_2_COMPLETE",
+          "type": "LEVEL_2_COMPLETION",
+          "amountStarCredits": 1000,
+          "amountGrantCredits": 0,
+          "badge": "ROCKET_COMMANDER",
+          "note": "Level 2: Rocket Assembly & Orbital Launch Reward",
+          "timestamp": "2026-11-15T05:44:31.814Z"
+        },
+        {
+          "id": "tx_1794721471819_lvl3",
+          "key": "verify-nav-1794721471640:LEVEL_3_COMPLETE",
+          "type": "LEVEL_3_COMPLETION",
+          "amountStarCredits": 1000,
+          "amountGrantCredits": 0,
+          "badge": "ORBIT_POWER_ENGINEER",
+          "note": "Level 3: Orbit & Power Management Reward",
+          "timestamp": "2026-11-15T05:44:31.819Z"
+        }
+      ],
+      "level1Progress": {
+        "stage": 1,
+        "satParts": [
+          "bus",
+          "solar",
+          "battery",
+          "antenna",
+          "camera",
+          "propulsion",
+          "computer",
+          "adcs",
+          "thermal"
+        ],
+        "rocketParts": [],
+        "stage1Done": true,
+        "stage2Done": false,
+        "stage3Done": false,
+        "stage4Done": false,
+        "stage5Done": false,
+        "launchStatus": "not_started"
+      },
+      "level2Progress": {
+        "stage": 4,
+        "rocketParts": [
+          "first_stage_structure",
+          "first_stage_tanks",
+          "first_stage_engines",
+          "interstage",
+          "second_stage_body",
+          "second_stage_engine",
+          "avionics",
+          "grid_fins",
+          "landing_legs",
+          "payload_fairing"
+        ],
+        "stage1Done": true,
+        "stage2Done": true,
+        "stage3Done": true,
+        "stage4Done": true,
+        "launchStatus": "completed"
+      },
+      "level4Progress": {
+        "stage": 1,
+        "installedParts": [],
+        "totalMassKg": 400,
+        "shakerResult": "pending",
+        "shakerScore": 30,
+        "shakerSignature": "",
+        "freezerResult": "pending",
+        "freezerMinTempC": null,
+        "freezerFinalTempC": null,
+        "freezerSignature": "",
+        "finalQualified": false
+      },
+      "updatedAt": "2026-11-15T05:44:31.824Z"
+    },
+    "test-lvl5-verify-1794725676292": {
+      "userId": "test-lvl5-verify-1794725676292",
+      "callsign": "Explorer-01",
+      "joined": false,
+      "trainingCompleted": false,
+      "currentCampaignLevel": 6,
+      "completedLevels": [
+        5
+      ],
+      "levelScores": {
+        "5": 1000
+      },
+      "completedTeamLevels": [],
+      "teamLevelScores": {},
+      "grantCredits": 10000,
+      "starCredits": 1000,
+      "xp": 0,
+      "badges": [
+        "PROPULSION_ENGINEER"
+      ],
+      "propulsionUpgradeUnlocked": true,
+      "level5FlybyCompleted": true,
+      "level5BestFuelKg": 55,
+      "unlockedStoreItems": [],
+      "transactions": [
+        {
+          "id": "tx_1794725676449_lvl5",
+          "key": "test-lvl5-verify-1794725676292:LEVEL_5_FLYBY_COMPLETE",
+          "type": "LEVEL_5_COMPLETION",
+          "amountStarCredits": 1000,
+          "amountGrantCredits": 0,
+          "badge": "PROPULSION_ENGINEER",
+          "note": "Level 5: Lunar Flyby – Fuel Math (55 kg Optimal Fuel + Propulsion Upgrade)",
+          "timestamp": "2026-11-15T06:54:36.449Z"
+        }
+      ],
+      "level1Progress": {
+        "stage": 1,
+        "satParts": [],
+        "rocketParts": [],
+        "stage1Done": false,
+        "stage2Done": false,
+        "stage3Done": false,
+        "stage4Done": false,
+        "stage5Done": false,
+        "launchStatus": "not_started"
+      },
+      "level2Progress": {
+        "stage": 1,
+        "rocketParts": [],
+        "stage1Done": false,
+        "stage2Done": false,
+        "stage3Done": false,
+        "stage4Done": false,
+        "launchStatus": "not_started"
+      },
+      "level4Progress": {
+        "stage": 1,
+        "installedParts": [],
+        "totalMassKg": 400,
+        "shakerResult": "pending",
+        "shakerScore": 30,
+        "shakerSignature": "",
+        "freezerResult": "pending",
+        "freezerMinTempC": null,
+        "freezerFinalTempC": null,
+        "freezerSignature": "",
+        "finalQualified": false
+      },
+      "updatedAt": "2026-11-15T06:54:36.459Z"
+    },
+    "explorer-01": {
+      "userId": "explorer-01",
+      "callsign": "Explorer-01",
+      "joined": true,
+      "trainingCompleted": true,
+      "currentCampaignLevel": 7,
+      "completedLevels": [
+        5
+      ],
+      "levelScores": {
+        "5": 1000
+      },
+      "completedTeamLevels": [
+        6
+      ],
+      "teamLevelScores": {
+        "6": 300
+      },
+      "grantCredits": 29500,
+      "starCredits": 2375,
+      "xp": 575,
+      "badges": [
+        "PROPULSION_ENGINEER",
+        "TEAM_MAGNETOSPHERE_CREW",
+        "TEAM_SOLAR_SHIELD_CREW",
+        "NEW_RECRUIT",
+        "MISSION_ARCHITECT"
+      ],
+      "propulsionUpgradeUnlocked": true,
+      "level5FlybyCompleted": true,
+      "level5BestFuelKg": 59,
+      "activeTeamId": "team_mwhkasko_ux05",
+      "teamRolePoints": 575,
+      "unlockedStoreItems": [],
+      "transactions": [
+        {
+          "id": "tx_1794730651847_lvl5",
+          "key": "explorer-01:LEVEL_5_FLYBY_COMPLETE",
+          "type": "LEVEL_5_COMPLETION",
+          "amountStarCredits": 1000,
+          "amountGrantCredits": 0,
+          "badge": "PROPULSION_ENGINEER",
+          "note": "Level 5: Lunar Flyby – Fuel Math (59 kg Optimal Fuel + Propulsion Upgrade)",
+          "timestamp": "2026-11-15T08:17:31.847Z"
+        },
+        {
+          "id": "tx_1794730804918_role",
+          "key": "explorer-01:TEAM_ROLE:team_mwhkasko_ux05:RUN_1:payload_specialist",
+          "type": "TEAM_ROLE_MISSION_REWARD",
+          "amountStarCredits": 100,
+          "amountGrantCredits": 0,
+          "amountXp": 275,
+          "note": "T-06 Payload & Science Specialist Mission Completed (+275 Role Pts)",
+          "timestamp": "2026-11-15T08:20:04.918Z"
+        },
+        {
+          "id": "tx_1794730804918_explorer-01_evt",
+          "key": "explorer-01:TEAM_EVENT:team_mwhkasko_ux05:RUN_1:T-06",
+          "type": "TEAM_MISSION_REWARD",
+          "amountStarCredits": 300,
+          "amountGrantCredits": 9000,
+          "badge": "TEAM_MAGNETOSPHERE_CREW",
+          "note": "Team Event T-06 (Polar Magnetosphere Array) Squad Completion",
+          "timestamp": "2026-11-15T08:20:04.918Z"
+        },
+        {
+          "id": "tx_1794730869961_role",
+          "key": "explorer-01:TEAM_ROLE:team_mwhkasko_ux05:RUN_2:propulsion_lead",
+          "type": "TEAM_ROLE_MISSION_REWARD",
+          "amountStarCredits": 125,
+          "amountGrantCredits": 0,
+          "amountXp": 300,
+          "note": "T-06B Propulsion & Fuel Engineer Mission Completed (+300 Role Pts)",
+          "timestamp": "2026-11-15T08:21:09.961Z"
+        },
+        {
+          "id": "tx_1794730869961_explorer-01_evt",
+          "key": "explorer-01:TEAM_EVENT:team_mwhkasko_ux05:RUN_2:T-06B",
+          "type": "TEAM_MISSION_REWARD",
+          "amountStarCredits": 350,
+          "amountGrantCredits": 10500,
+          "badge": "TEAM_SOLAR_SHIELD_CREW",
+          "note": "Team Event T-06B (Solar Storm Relay Sync) Squad Completion",
+          "timestamp": "2026-11-15T08:21:09.961Z"
+        },
+        {
+          "id": "tx_1794733190544_recruit",
+          "key": "explorer-01:NEW_RECRUIT",
+          "type": "NEW_RECRUIT",
+          "amountStarCredits": 500,
+          "amountGrantCredits": 10000,
+          "badge": "NEW_RECRUIT",
+          "note": "GALAXY-X New Recruit Commission",
+          "timestamp": "2026-11-15T08:59:50.544Z"
+        }
+      ],
+      "level1Progress": {
+        "stage": 1,
+        "satParts": [],
+        "rocketParts": [],
+        "stage1Done": false,
+        "stage2Done": false,
+        "stage3Done": false,
+        "stage4Done": false,
+        "stage5Done": false,
+        "launchStatus": "not_started"
+      },
+      "level2Progress": {
+        "stage": 1,
+        "rocketParts": [],
+        "stage1Done": false,
+        "stage2Done": false,
+        "stage3Done": false,
+        "stage4Done": false,
+        "launchStatus": "not_started"
+      },
+      "level4Progress": {
+        "stage": 1,
+        "installedParts": [],
+        "totalMassKg": 400,
+        "shakerResult": "pending",
+        "shakerScore": 30,
+        "shakerSignature": "",
+        "freezerResult": "pending",
+        "freezerMinTempC": null,
+        "freezerFinalTempC": null,
+        "freezerSignature": "",
+        "finalQualified": false
+      },
+      "updatedAt": "2026-11-15T12:20:31.937Z",
+      "level6Progress": {
+        "stage": 0,
+        "probeBuild": {
+          "body": "body_alu",
+          "legs": "legs_skid",
+          "sensor": "sensor_thermo",
+          "battery": "bat_zinc",
+          "heater": "heat_strip",
+          "antenna": "ant_whip"
+        },
+        "calibrationSolvedIds": [],
+        "rocketParts": [],
+        "rocketStage": 1,
+        "launchCompleted": false,
+        "landingSolved": {
+          "speed": false,
+          "tilt": false,
+          "thermal": false
+        },
+        "landed": false,
+        "collectedReadings": [],
+        "transmittedPackets": 0,
+        "missionStartedAtMs": null,
+        "missionDeadlineMs": null,
+        "timerExpired": false
+      }
+    },
+    "__test_verify_p1": {
+      "userId": "__test_verify_p1",
+      "callsign": "Explorer-01",
+      "joined": false,
+      "trainingCompleted": false,
+      "currentCampaignLevel": 8,
+      "completedLevels": [
+        7
+      ],
+      "levelScores": {
+        "7": 980
+      },
+      "completedTeamLevels": [
+        6
+      ],
+      "teamLevelScores": {
+        "6": 1310
+      },
+      "grantCredits": 19000,
+      "starCredits": 1500,
+      "xp": 525,
+      "badges": [
+        "TEAM_MAGNETOSPHERE_CREW",
+        "MARS_EXPLORER"
+      ],
+      "propulsionUpgradeUnlocked": false,
+      "level5FlybyCompleted": false,
+      "level5BestFuelKg": null,
+      "activeTeamId": null,
+      "teamRolePoints": 525,
+      "unlockedStoreItems": [],
+      "transactions": [
+        {
+          "id": "tx_1794731231147_role",
+          "key": "__test_verify_p1:TEAM_ROLE:team_mwhkmwrk_90nr:RUN_1:telemetry_officer",
+          "type": "TEAM_ROLE_MISSION_REWARD",
+          "amountStarCredits": 100,
+          "amountGrantCredits": 0,
+          "amountXp": 250,
+          "note": "T-06 Telemetry & Comms Officer Mission Completed (+250 Role Pts)",
+          "timestamp": "2026-11-15T08:27:11.147Z"
+        },
+        {
+          "id": "tx_1794731231152_role",
+          "key": "__test_verify_p1:TEAM_ROLE:team_mwhkmwrk_90nr:RUN_1:payload_specialist",
+          "type": "TEAM_ROLE_MISSION_REWARD",
+          "amountStarCredits": 100,
+          "amountGrantCredits": 0,
+          "amountXp": 275,
+          "note": "T-06 Payload & Science Specialist Mission Completed (+275 Role Pts)",
+          "timestamp": "2026-11-15T08:27:11.152Z"
+        },
+        {
+          "id": "tx_1794731231164___test_verify_p1_evt",
+          "key": "__test_verify_p1:TEAM_EVENT:team_mwhkmwrk_90nr:RUN_1:T-06",
+          "type": "TEAM_MISSION_REWARD",
+          "amountStarCredits": 300,
+          "amountGrantCredits": 9000,
+          "badge": "TEAM_MAGNETOSPHERE_CREW",
+          "note": "Team Event T-06 (Polar Magnetosphere Array) Squad Completion",
+          "timestamp": "2026-11-15T08:27:11.164Z"
+        },
+        {
+          "id": "tx_1794731231174_lvl7",
+          "key": "__test_verify_p1:LEVEL_7_MARS_NUCLEAR_COMPLETE",
+          "type": "LEVEL_7_COMPLETION",
+          "amountStarCredits": 1000,
+          "amountGrantCredits": 0,
+          "badge": "MARS_EXPLORER",
+          "note": "Level 7: The Long Trip to Mars – Nuclear Power Completion Reward",
+          "timestamp": "2026-11-15T08:27:11.174Z"
+        }
+      ],
+      "level1Progress": {
+        "stage": 1,
+        "satParts": [],
+        "rocketParts": [],
+        "stage1Done": false,
+        "stage2Done": false,
+        "stage3Done": false,
+        "stage4Done": false,
+        "stage5Done": false,
+        "launchStatus": "not_started"
+      },
+      "level2Progress": {
+        "stage": 1,
+        "rocketParts": [],
+        "stage1Done": false,
+        "stage2Done": false,
+        "stage3Done": false,
+        "stage4Done": false,
+        "launchStatus": "not_started"
+      },
+      "level4Progress": {
+        "stage": 1,
+        "installedParts": [],
+        "totalMassKg": 400,
+        "shakerResult": "pending",
+        "shakerScore": 30,
+        "shakerSignature": "",
+        "freezerResult": "pending",
+        "freezerMinTempC": null,
+        "freezerFinalTempC": null,
+        "freezerSignature": "",
+        "finalQualified": false
+      },
+      "updatedAt": "2026-11-15T08:27:11.186Z"
+    },
+    "__test_verify_p2": {
+      "userId": "__test_verify_p2",
+      "callsign": "VerifyP2",
+      "joined": false,
+      "trainingCompleted": false,
+      "currentCampaignLevel": 1,
+      "completedLevels": [],
+      "levelScores": {},
+      "completedTeamLevels": [
+        6
+      ],
+      "teamLevelScores": {
+        "6": 1310
+      },
+      "grantCredits": 19000,
+      "starCredits": 550,
+      "xp": 625,
+      "badges": [
+        "TEAM_MAGNETOSPHERE_CREW"
+      ],
+      "propulsionUpgradeUnlocked": false,
+      "level5FlybyCompleted": false,
+      "level5BestFuelKg": null,
+      "activeTeamId": null,
+      "teamRolePoints": 625,
+      "unlockedStoreItems": [],
+      "transactions": [
+        {
+          "id": "tx_1794731231159_role",
+          "key": "__test_verify_p2:TEAM_ROLE:team_mwhkmwrk_90nr:RUN_1:propulsion_lead",
+          "type": "TEAM_ROLE_MISSION_REWARD",
+          "amountStarCredits": 125,
+          "amountGrantCredits": 0,
+          "amountXp": 300,
+          "note": "T-06 Propulsion & Fuel Engineer Mission Completed (+300 Role Pts)",
+          "timestamp": "2026-11-15T08:27:11.159Z"
+        },
+        {
+          "id": "tx_1794731231164_role",
+          "key": "__test_verify_p2:TEAM_ROLE:team_mwhkmwrk_90nr:RUN_1:flight_director",
+          "type": "TEAM_ROLE_MISSION_REWARD",
+          "amountStarCredits": 125,
+          "amountGrantCredits": 0,
+          "amountXp": 325,
+          "note": "T-06 Flight Director & Orbit Commander Mission Completed (+325 Role Pts)",
+          "timestamp": "2026-11-15T08:27:11.164Z"
+        },
+        {
+          "id": "tx_1794731231164___test_verify_p2_evt",
+          "key": "__test_verify_p2:TEAM_EVENT:team_mwhkmwrk_90nr:RUN_1:T-06",
+          "type": "TEAM_MISSION_REWARD",
+          "amountStarCredits": 300,
+          "amountGrantCredits": 9000,
+          "badge": "TEAM_MAGNETOSPHERE_CREW",
+          "note": "Team Event T-06 (Polar Magnetosphere Array) Squad Completion",
+          "timestamp": "2026-11-15T08:27:11.164Z"
+        }
+      ],
+      "level1Progress": {
+        "stage": 1,
+        "satParts": [],
+        "rocketParts": [],
+        "stage1Done": false,
+        "stage2Done": false,
+        "stage3Done": false,
+        "stage4Done": false,
+        "stage5Done": false,
+        "launchStatus": "not_started"
+      },
+      "level2Progress": {
+        "stage": 1,
+        "rocketParts": [],
+        "stage1Done": false,
+        "stage2Done": false,
+        "stage3Done": false,
+        "stage4Done": false,
+        "launchStatus": "not_started"
+      },
+      "level4Progress": {
+        "stage": 1,
+        "installedParts": [],
+        "totalMassKg": 400,
+        "shakerResult": "pending",
+        "shakerScore": 30,
+        "shakerSignature": "",
+        "freezerResult": "pending",
+        "freezerMinTempC": null,
+        "freezerFinalTempC": null,
+        "freezerSignature": "",
+        "finalQualified": false
+      },
+      "updatedAt": "2026-11-15T08:27:11.192Z"
+    },
+    "__test_verify_p3": {
+      "userId": "__test_verify_p3",
+      "callsign": "VerifyP3",
+      "joined": false,
+      "trainingCompleted": false,
+      "currentCampaignLevel": 1,
+      "completedLevels": [],
+      "levelScores": {},
+      "completedTeamLevels": [],
+      "teamLevelScores": {},
+      "grantCredits": 10000,
+      "starCredits": 0,
+      "xp": 0,
+      "badges": [],
+      "propulsionUpgradeUnlocked": false,
+      "level5FlybyCompleted": false,
+      "level5BestFuelKg": null,
+      "activeTeamId": null,
+      "teamRolePoints": 0,
+      "unlockedStoreItems": [],
+      "transactions": [],
+      "level1Progress": {
+        "stage": 1,
+        "satParts": [],
+        "rocketParts": [],
+        "stage1Done": false,
+        "stage2Done": false,
+        "stage3Done": false,
+        "stage4Done": false,
+        "stage5Done": false,
+        "launchStatus": "not_started"
+      },
+      "level2Progress": {
+        "stage": 1,
+        "rocketParts": [],
+        "stage1Done": false,
+        "stage2Done": false,
+        "stage3Done": false,
+        "stage4Done": false,
+        "launchStatus": "not_started"
+      },
+      "level4Progress": {
+        "stage": 1,
+        "installedParts": [],
+        "totalMassKg": 400,
+        "shakerResult": "pending",
+        "shakerScore": 30,
+        "shakerSignature": "",
+        "freezerResult": "pending",
+        "freezerMinTempC": null,
+        "freezerFinalTempC": null,
+        "freezerSignature": "",
+        "finalQualified": false
+      },
+      "updatedAt": "2026-11-15T08:26:44.846Z"
+    },
+    "test-l6-smoke": {
+      "userId": "test-l6-smoke",
+      "callsign": "Explorer-01",
+      "joined": false,
+      "trainingCompleted": false,
+      "currentCampaignLevel": 7,
+      "completedLevels": [
+        6
+      ],
+      "levelScores": {
+        "6": 1500
+      },
+      "grantCredits": 10000,
+      "starCredits": 1500,
+      "xp": 150,
+      "badges": [
+        "THERMAL_TELEMETRY_SPECIALIST"
+      ],
+      "propulsionUpgradeUnlocked": false,
+      "level5FlybyCompleted": false,
+      "level5BestFuelKg": null,
+      "unlockedStoreItems": [],
+      "transactions": [
+        {
+          "id": "tx_1794733696063_lvl6",
+          "key": "test-l6-smoke:LEVEL_6_EUROPA_COMPLETE",
+          "type": "LEVEL_6_COMPLETION",
+          "amountStarCredits": 1500,
+          "amountGrantCredits": 0,
+          "amountXp": 150,
+          "badge": "THERMAL_TELEMETRY_SPECIALIST",
+          "note": "Level 6: Europa Thermometer Telemetry Probe Completion Reward",
+          "timestamp": "2026-11-15T09:08:16.063Z"
+        }
+      ],
+      "level1Progress": {
+        "stage": 1,
+        "satParts": [],
+        "rocketParts": [],
+        "stage1Done": false,
+        "stage2Done": false,
+        "stage3Done": false,
+        "stage4Done": false,
+        "stage5Done": false,
+        "launchStatus": "not_started"
+      },
+      "level2Progress": {
+        "stage": 1,
+        "rocketParts": [],
+        "stage1Done": false,
+        "stage2Done": false,
+        "stage3Done": false,
+        "stage4Done": false,
+        "launchStatus": "not_started"
+      },
+      "level4Progress": {
+        "stage": 1,
+        "installedParts": [],
+        "totalMassKg": 400,
+        "shakerResult": "pending",
+        "shakerScore": 30,
+        "shakerSignature": "",
+        "freezerResult": "pending",
+        "freezerMinTempC": null,
+        "freezerFinalTempC": null,
+        "freezerSignature": "",
+        "finalQualified": false
+      },
+      "level6Progress": {
+        "stage": 1,
+        "probeBuild": {
+          "body": "body_ti",
+          "legs": "legs_tri",
+          "sensor": "sensor_rtd",
+          "battery": "bat_li",
+          "heater": "heat_rhupulse",
+          "antenna": "ant_hga"
+        },
+        "calibrationSolvedIds": [],
+        "rocketParts": [],
+        "rocketStage": 1,
+        "launchCompleted": false,
+        "landingSolved": {
+          "speed": false,
+          "tilt": false,
+          "thermal": false
+        },
+        "landed": false,
+        "collectedReadings": [],
+        "transmittedPackets": 0,
+        "missionStartedAtMs": null,
+        "missionDeadlineMs": null,
+        "timerExpired": false
+      },
+      "updatedAt": "2026-11-15T09:08:16.063Z"
+    },
+    "smoke-l78-1794745925432": {
+      "userId": "smoke-l78-1794745925432",
+      "callsign": "SmokeTester",
+      "joined": true,
+      "trainingCompleted": false,
+      "currentCampaignLevel": 9,
+      "completedLevels": [
+        7,
+        8
+      ],
+      "levelScores": {
+        "7": 2000,
+        "8": 1500
+      },
+      "grantCredits": 10000,
+      "starCredits": 4000,
+      "xp": 450,
+      "badges": [
+        "NEW_RECRUIT",
+        "MARS_RESCUE_COMMANDER",
+        "LUNAR_WATER_EXPLORER"
+      ],
+      "propulsionUpgradeUnlocked": false,
+      "level5FlybyCompleted": false,
+      "level5BestFuelKg": null,
+      "unlockedStoreItems": [],
+      "transactions": [
+        {
+          "id": "tx_1794745925575_recruit",
+          "key": "smoke-l78-1794745925432:NEW_RECRUIT",
+          "type": "NEW_RECRUIT",
+          "amountStarCredits": 500,
+          "amountGrantCredits": 10000,
+          "badge": "NEW_RECRUIT",
+          "note": "GALAXY-X New Recruit Commission",
+          "timestamp": "2026-11-15T12:32:05.575Z"
+        },
+        {
+          "id": "tx_1794745925612_lvl7",
+          "key": "smoke-l78-1794745925432:LEVEL_7_MARS_RESCUE_COMPLETE",
+          "type": "LEVEL_7_COMPLETION",
+          "amountStarCredits": 2000,
+          "amountGrantCredits": 0,
+          "amountXp": 250,
+          "badge": "MARS_RESCUE_COMMANDER",
+          "note": "Level 7: Mars Solar Storm Rescue Completion Reward",
+          "timestamp": "2026-11-15T12:32:05.612Z"
+        },
+        {
+          "id": "tx_1794745925637_lvl8",
+          "key": "smoke-l78-1794745925432:LEVEL_8_LUNAR_WATER_COMPLETE",
+          "type": "LEVEL_8_COMPLETION",
+          "amountStarCredits": 1500,
+          "amountGrantCredits": 0,
+          "amountXp": 200,
+          "badge": "LUNAR_WATER_EXPLORER",
+          "note": "Level 8: Lunar Water Hunt Completion Reward",
+          "timestamp": "2026-11-15T12:32:05.637Z"
+        }
+      ],
+      "level1Progress": {
+        "stage": 1,
+        "satParts": [],
+        "rocketParts": [],
+        "stage1Done": false,
+        "stage2Done": false,
+        "stage3Done": false,
+        "stage4Done": false,
+        "stage5Done": false,
+        "launchStatus": "not_started"
+      },
+      "level2Progress": {
+        "stage": 1,
+        "rocketParts": [],
+        "stage1Done": false,
+        "stage2Done": false,
+        "stage3Done": false,
+        "stage4Done": false,
+        "launchStatus": "not_started"
+      },
+      "level4Progress": {
+        "stage": 1,
+        "installedParts": [],
+        "totalMassKg": 400,
+        "shakerResult": "pending",
+        "shakerScore": 30,
+        "shakerSignature": "",
+        "freezerResult": "pending",
+        "freezerMinTempC": null,
+        "freezerFinalTempC": null,
+        "freezerSignature": "",
+        "finalQualified": false
+      },
+      "level6Progress": {
+        "stage": 0,
+        "probeBuild": {
+          "body": "body_alu",
+          "legs": "legs_skid",
+          "sensor": "sensor_thermo",
+          "battery": "bat_zinc",
+          "heater": "heat_strip",
+          "antenna": "ant_whip"
+        },
+        "calibrationSolvedIds": [],
+        "rocketParts": [],
+        "rocketStage": 1,
+        "launchCompleted": false,
+        "landingSolved": {
+          "speed": false,
+          "tilt": false,
+          "thermal": false
+        },
+        "landed": false,
+        "collectedReadings": [],
+        "transmittedPackets": 0,
+        "missionStartedAtMs": null,
+        "missionDeadlineMs": null,
+        "timerExpired": false
+      },
+      "level7Progress": {
+        "stage": 2,
+        "satBuild": {
+          "body": "sat_body_frame",
+          "antenna": "sat_ant_dipole",
+          "solar": "sat_solar_compact",
+          "battery": "sat_bat_small",
+          "processor": "sat_proc_legacy",
+          "thermal": "sat_therm_foil",
+          "radiation": "sat_rad_thin"
+        },
+        "testsPassed": {
+          "power": false,
+          "comms": false,
+          "survival": false
+        },
+        "rocketParts": [],
+        "rocketStage": 1,
+        "launchCompleted": false,
+        "testedLinks": {},
+        "rescueRestored": false,
+        "missionStartedAtMs": null,
+        "missionDeadlineMs": null,
+        "timerExpired": false
+      },
+      "level8Progress": {
+        "stage": 2,
+        "build": {
+          "body": "l_body_alu",
+          "instruments": "l_inst_cam",
+          "comms": "l_comms_whip",
+          "power": "l_pow_strip",
+          "propulsion": "l_prop_cold",
+          "navigation": "l_nav_gyro",
+          "fuel": "l_fuel_std",
+          "fuelMassKg": 40
+        },
+        "fuelTestPassed": false,
+        "rocketParts": [],
+        "rocketStage": 1,
+        "launchCompleted": false,
+        "navHeadingDeg": 14,
+        "navOrbitLocked": false,
+        "craterScans": [],
+        "evidenceMeterPct": 0,
+        "transmittedPct": 0,
+        "transmissionInterrupted": false,
+        "missionStartedAtMs": null,
+        "missionDeadlineMs": null,
+        "timerExpired": false
+      },
+      "updatedAt": "2026-11-15T12:32:05.646Z"
+    },
+    "test-user": {
+      "userId": "test-user",
+      "callsign": "Explorer-01",
+      "joined": false,
+      "trainingCompleted": false,
+      "currentCampaignLevel": 1,
+      "completedLevels": [],
+      "levelScores": {},
+      "grantCredits": 10000,
+      "starCredits": 0,
+      "xp": 0,
+      "badges": [],
+      "propulsionUpgradeUnlocked": false,
+      "level5FlybyCompleted": false,
+      "level5BestFuelKg": null,
+      "unlockedStoreItems": [],
+      "transactions": [],
+      "level1Progress": {
+        "stage": 1,
+        "satParts": [],
+        "rocketParts": [],
+        "stage1Done": false,
+        "stage2Done": false,
+        "stage3Done": false,
+        "stage4Done": false,
+        "stage5Done": false,
+        "launchStatus": "not_started"
+      },
+      "level2Progress": {
+        "stage": 1,
+        "rocketParts": [],
+        "stage1Done": false,
+        "stage2Done": false,
+        "stage3Done": false,
+        "stage4Done": false,
+        "launchStatus": "not_started"
+      },
+      "level4Progress": {
+        "stage": 1,
+        "installedParts": [],
+        "totalMassKg": 400,
+        "shakerResult": "pending",
+        "shakerScore": 30,
+        "shakerSignature": "",
+        "freezerResult": "pending",
+        "freezerMinTempC": null,
+        "freezerFinalTempC": null,
+        "freezerSignature": "",
+        "finalQualified": false
+      },
+      "level6Progress": {
+        "stage": 0,
+        "probeBuild": {
+          "body": "body_alu",
+          "legs": "legs_skid",
+          "sensor": "sensor_thermo",
+          "battery": "bat_zinc",
+          "heater": "heat_strip",
+          "antenna": "ant_whip"
+        },
+        "calibrationSolvedIds": [],
+        "rocketParts": [],
+        "rocketStage": 1,
+        "launchCompleted": false,
+        "landingSolved": {
+          "speed": false,
+          "tilt": false,
+          "thermal": false
+        },
+        "landed": false,
+        "collectedReadings": [],
+        "transmittedPackets": 0,
+        "missionStartedAtMs": null,
+        "missionDeadlineMs": null,
+        "timerExpired": false
+      },
+      "level7Progress": {
+        "stage": 0,
+        "satBuild": {
+          "body": "sat_body_frame",
+          "antenna": "sat_ant_dipole",
+          "solar": "sat_solar_compact",
+          "battery": "sat_bat_small",
+          "processor": "sat_proc_legacy",
+          "thermal": "sat_therm_foil",
+          "radiation": "sat_rad_thin"
+        },
+        "equippedStoreGear": [],
+        "testsPassed": {
+          "power": false,
+          "comms": false,
+          "survival": false
+        },
+        "rocketParts": [],
+        "rocketStage": 1,
+        "launchCompleted": false,
+        "testedLinks": {},
+        "rescueRestored": false,
+        "missionStartedAtMs": null,
+        "missionDeadlineMs": null,
+        "timerExpired": false
+      },
+      "level8Progress": {
+        "stage": 0,
+        "build": {
+          "body": "l_body_alu",
+          "instruments": "l_inst_cam",
+          "comms": "l_comms_whip",
+          "power": "l_pow_strip",
+          "propulsion": "l_prop_cold",
+          "navigation": "l_nav_gyro",
+          "fuel": "l_fuel_std",
+          "fuelMassKg": 40
+        },
+        "equippedStoreGear": [],
+        "fuelTestPassed": false,
+        "rocketParts": [],
+        "rocketStage": 1,
+        "launchCompleted": false,
+        "navHeadingDeg": 14,
+        "navOrbitLocked": false,
+        "craterScans": [],
+        "evidenceMeterPct": 0,
+        "transmittedPct": 0,
+        "transmissionInterrupted": false,
+        "missionStartedAtMs": null,
+        "missionDeadlineMs": null,
+        "timerExpired": false
+      },
+      "updatedAt": "2026-11-15T13:30:27.832Z"
+    }
+  }
+}

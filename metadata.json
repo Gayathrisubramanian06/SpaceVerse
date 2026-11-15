@@ -1,0 +1,6 @@
+{
+  "name": "SpaceVerse",
+  "description": "Interactive 3D aerospace mission campus, satellite assembly, rocket launch simulation, and multiplayer team ops.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
