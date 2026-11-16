@@ -2,6 +2,8 @@
 
 **SpaceVerse** is an immersive, NASA‑inspired web experience that lets you explore a virtual space ecosystem across multiple conceptual maturity levels. The app combines realistic mission data, an interactive handbook, and progressive gameplay stages to guide users from a beginner’s orbit tour to advanced mission planning.
 
+![Mission Overview 2](assets/mission_overview_2.jpg)
+
 ### What you’ll discover
 - **01 Satellite Assembly** – Fit the core spacecraft systems and complete a working satellite.
 - **02 Rocket Assembly & Launch** – Configure the launch vehicle, verify stages and prepare ignition.
@@ -12,13 +14,11 @@
 - **07 Lunar Water Hunt** – Navigate to lunar polar craters, scan sites and gather ice evidence.
 - **08 Rescue the Lost Asteroid** – Use mission planning and spacecraft systems to locate and assist a lost object.
 
-![Mission Overview 2](assets/mission_overview_2.jpg)
 ![Mission Overview 3](assets/mission_overview_3.jpg)
 
 ### NASA‑Based Handbook
 The built‑in handbook pulls data from publicly available NASA archives (mission timelines, vehicle specs, and scientific findings). It serves as an in‑game encyclopedia, providing detailed reference material for each mission phase and technology.
 
-![Mission Overview 4](assets/mission_overview_4.png)
 ![Mission Overview 5](assets/mission_overview_5.jpg)
 
 ### Concept Maturity Levels
