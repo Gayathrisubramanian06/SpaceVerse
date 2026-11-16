@@ -148,6 +148,7 @@ repo_root/
 ├─ tsconfig.json         # TypeScript compiler options
 ├─ package.json          # Scripts & dependencies
 └─ README.md             # ← This file
+<<<<<<< HEAD
 ```
 
 ---
@@ -161,6 +162,8 @@ Contributions are welcome! Please follow these steps:
 3. Make your changes and ensure the project still builds (`pnpm lint && pnpm build`).
 4. Open a pull request with a clear description of the change.
 
+=======
+>>>>>>> fa7941eb46937493c6337e1e3d9424196cbf2dec
 ---
 
 ## License
@@ -169,4 +172,8 @@ This project is licensed under the **MIT License** – see the `LICENSE` file fo
 
 ---
 
+<<<<<<< HEAD
 *Happy exploring the SpaceVerse!*
+=======
+*Happy exploring the SpaceVerse!*
+>>>>>>> fa7941eb46937493c6337e1e3d9424196cbf2dec
