@@ -5,6 +5,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createServer as createViteServer } from 'vite';
+import dotenv from 'dotenv';
+dotenv.config();
 import { evaluateLunarFuel, isValidLunarFuelValue } from './src/utils/lunarFuelMath.ts';
 import {
   CALIBRATION_EXPERIMENTS,
