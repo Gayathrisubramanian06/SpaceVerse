@@ -37,7 +37,7 @@ import {
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const PORT = 3000;
+const PORT = Number(process.env.PORT) || 3000;
 const DB_DIR = path.join(__dirname, '.data');
 const DB_FILE = path.join(DB_DIR, 'galaxyx-db.json');
 const AUTH_REGISTRY_FILE = path.join(DB_DIR, 'auth-registry.json');
