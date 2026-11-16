@@ -3,10 +3,17 @@
 **SpaceVerse** is an immersive, NASA‑inspired web experience that lets you explore a virtual space ecosystem across multiple conceptual maturity levels. The app combines realistic mission data, an interactive handbook, and progressive gameplay stages to guide users from a beginner’s orbit tour to advanced mission planning.
 
 ### What you’ll discover
-- **Level 1 – Orbital Overview** – Fly around Earth’s orbit, learn basic orbital mechanics, and interact with a simplified spacecraft UI.
-- **Level 2 – Lunar Exploration** – Land on the Moon, conduct surface experiments, and manage limited resources.
-- **Level 3 – Mars Transit** – Plan interplanetary trajectories using NASA‑derived delta‑v charts and experience real‑time navigation challenges.
-- **Level 4 – Deep‑Space Operations** – Operate a crewed spacecraft, handle life‑support systems, and conduct scientific research in the asteroid belt.
+- **01 Satellite Assembly** – Fit the core spacecraft systems and complete a working satellite.
+- **02 Rocket Assembly & Launch** – Configure the launch vehicle, verify stages and prepare ignition.
+- **03 Orbit Insertion & Power** – Balance solar generation and battery capacity for an orbiting satellite.
+- **04 Shake & Freeze Test** – Protect the spacecraft from launch vibration and extreme cold within limits.
+- **05 Lunar Flyby – Fuel Math** – Find a fuel load that reaches the Moon without exceeding lift capacity.
+- **06 Thermometer Telemetry** – Calibrate a probe, measure temperatures and transmit usable readings.
+- **07 Lunar Water Hunt** – Navigate to lunar polar craters, scan sites and gather ice evidence.
+- **08 Rescue the Lost Asteroid** – Use mission planning and spacecraft systems to locate and assist a lost object.
+
+![Mission Overview 2](file:///C:/Users/gayat/.gemini/antigravity/brain/fbf675ed-35cc-41a6-ac94-e1117db672e1/.user_uploaded/media_1794834581567_ca39f8fc.jpg)
+![Mission Overview 3](file:///C:/Users/gayat/.gemini/antigravity/brain/fbf675ed-35cc-41a6-ac94-e1117db672e1/.user_uploaded/media_1794834607340_97d1b732.jpg)
 
 ### NASA‑Based Handbook
 The built‑in handbook pulls data from publicly available NASA archives (mission timelines, vehicle specs, and scientific findings). It serves as an in‑game encyclopedia, providing detailed reference material for each mission phase and technology.
@@ -140,6 +147,16 @@ repo_root/
 └─ README.md             # ← This file
 ```
 
+---
+
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository.
+2. Create a feature branch (`git checkout -b feature/awesome‑feature`).
+3. Make your changes and ensure the project still builds (`pnpm lint && pnpm build`).
+4. Open a pull request with a clear description of the change.
 
 ---
 
