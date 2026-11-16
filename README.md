@@ -12,14 +12,14 @@
 - **07 Lunar Water Hunt** – Navigate to lunar polar craters, scan sites and gather ice evidence.
 - **08 Rescue the Lost Asteroid** – Use mission planning and spacecraft systems to locate and assist a lost object.
 
-![Mission Overview 2](public/assets/mission_overview_2.jpg)
-![Mission Overview 3](public/assets/mission_overview_3.jpg)
+![Mission Overview 2](assets/mission_overview_2.jpg)
+![Mission Overview 3](assets/mission_overview_3.jpg)
 
 ### NASA‑Based Handbook
 The built‑in handbook pulls data from publicly available NASA archives (mission timelines, vehicle specs, and scientific findings). It serves as an in‑game encyclopedia, providing detailed reference material for each mission phase and technology.
 
-![Mission Overview 4](public/assets/mission_overview_4.png)
-![Mission Overview 5](public/assets/mission_overview_5.jpg)
+![Mission Overview 4](assets/mission_overview_4.png)
+![Mission Overview 5](assets/mission_overview_5.jpg)
 
 ### Concept Maturity Levels
 SpaceVerse was developed through four distinct Concept Maturity Levels (CML):
@@ -148,19 +148,6 @@ repo_root/
 ├─ tsconfig.json         # TypeScript compiler options
 ├─ package.json          # Scripts & dependencies
 └─ README.md             # ← This file
-```
-
----
-
-## Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository.
-2. Create a feature branch (`git checkout -b feature/awesome‑feature`).
-3. Make your changes and ensure the project still builds (`pnpm lint && pnpm build`).
-4. Open a pull request with a clear description of the change.
-
 ---
 
 ## License
