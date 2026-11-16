@@ -1,0 +1,232 @@
+{
+  "entities": {
+    "PlayerProfile": {
+      "title": "PlayerProfile",
+      "description": "Authenticated SpaceVerse player profile, progression, currency, badges, stars, and mission checkpoints.",
+      "type": "object",
+      "properties": {
+        "uid": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$",
+          "description": "Firebase Authentication UID matching the document ID."
+        },
+        "username": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 24,
+          "pattern": "^[a-zA-Z0-9_\\-]+$",
+          "description": "Unique display username chosen during registration."
+        },
+        "usernameLower": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 24,
+          "pattern": "^[a-z0-9_\\-]+$",
+          "description": "Lowercase normalized username for uniqueness."
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "minLength": 3,
+          "maxLength": 160,
+          "description": "Player email address used with Firebase Authentication."
+        },
+        "callsign": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 64,
+          "description": "Explorer callsign displayed inside GALAXY-X."
+        },
+        "joined": {
+          "type": "boolean",
+          "description": "Whether the recruit commissioning welcome has been accepted."
+        },
+        "trainingCompleted": {
+          "type": "boolean",
+          "description": "Whether Cadet Orientation Training has been completed."
+        },
+        "currentCampaignLevel": {
+          "type": "integer",
+          "description": "Current active campaign level (1 to 8)."
+        },
+        "currentMissionStage": {
+          "type": "integer",
+          "description": "Current active mission stage/checkpoint."
+        },
+        "completedLevels": {
+          "type": "array",
+          "description": "List of completed campaign level numbers (1-8)."
+        },
+        "unlockedLevels": {
+          "type": "array",
+          "description": "List of unlocked campaign level numbers (1-8)."
+        },
+        "levelStars": {
+          "type": "object",
+          "description": "Map of level number string to stars earned (0-3)."
+        },
+        "totalStars": {
+          "type": "integer",
+          "description": "Total stars earned across all 8 levels (0-24)."
+        },
+        "levelScores": {
+          "type": "object",
+          "description": "Map of level number string to best score."
+        },
+        "grantCredits": {
+          "type": "integer",
+          "description": "Research grant credits balance."
+        },
+        "starCredits": {
+          "type": "integer",
+          "description": "Total StarCredits (SC) balance."
+        },
+        "xp": {
+          "type": "integer",
+          "description": "Total Engineering XP."
+        },
+        "badges": {
+          "type": "array",
+          "description": "Unlocked badge identifiers."
+        },
+        "propulsionUpgradeUnlocked": {
+          "type": "boolean",
+          "description": "Whether the Level 5 Propulsion Upgrade is unlocked."
+        },
+        "level5FlybyCompleted": {
+          "type": "boolean",
+          "description": "Whether Level 5 Lunar Flyby has been completed."
+        },
+        "level5BestFuelKg": {
+          "type": "number",
+          "description": "Best optimal fuel mass in kg for Level 5."
+        },
+        "unlockedStoreItems": {
+          "type": "array",
+          "description": "Unlocked equipment upgrade IDs from Galaxy Store."
+        },
+        "rewardsCollected": {
+          "type": "array",
+          "description": "Idempotency keys for collected mission rewards."
+        },
+        "transactions": {
+          "type": "array",
+          "description": "Recent reward and purchase transactions."
+        },
+        "level1Progress": {
+          "type": "object",
+          "description": "Checkpoint state for Level 1."
+        },
+        "level2Progress": {
+          "type": "object",
+          "description": "Checkpoint state for Level 2."
+        },
+        "level4Progress": {
+          "type": "object",
+          "description": "Checkpoint state for Level 4."
+        },
+        "level6Progress": {
+          "type": "object",
+          "description": "Checkpoint state for Level 6."
+        },
+        "level7Progress": {
+          "type": "object",
+          "description": "Checkpoint state for Level 7."
+        },
+        "level8Progress": {
+          "type": "object",
+          "description": "Checkpoint state for Level 8."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Profile creation server timestamp."
+        },
+        "lastSavedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Last cloud save server timestamp."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Last modification server timestamp."
+        }
+      },
+      "required": [
+        "uid",
+        "username",
+        "usernameLower",
+        "email",
+        "callsign",
+        "joined",
+        "trainingCompleted",
+        "currentCampaignLevel",
+        "currentMissionStage",
+        "completedLevels",
+        "unlockedLevels",
+        "levelStars",
+        "totalStars",
+        "levelScores",
+        "grantCredits",
+        "starCredits",
+        "xp",
+        "badges",
+        "propulsionUpgradeUnlocked",
+        "level5FlybyCompleted",
+        "level5BestFuelKg",
+        "unlockedStoreItems",
+        "rewardsCollected",
+        "transactions",
+        "level1Progress",
+        "level2Progress",
+        "level4Progress",
+        "level6Progress",
+        "level7Progress",
+        "level8Progress",
+        "createdAt",
+        "lastSavedAt",
+        "updatedAt"
+      ]
+    },
+    "UsernameReservation": {
+      "title": "UsernameReservation",
+      "description": "Non-PII username uniqueness reservation keyed by lowercase username.",
+      "type": "object",
+      "properties": {
+        "uid": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$",
+          "description": "Owner Firebase Auth UID."
+        },
+        "username": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 24,
+          "pattern": "^[a-zA-Z0-9_\\-]+$",
+          "description": "Original cased username."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Reservation server timestamp."
+        }
+      },
+      "required": ["uid", "username", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/players/{userId}": {
+      "schema": { "$ref": "#/entities/PlayerProfile" },
+      "description": "Private player profile and cloud progress save keyed by Firebase Auth UID."
+    },
+    "/usernames/{usernameLower}": {
+      "schema": { "$ref": "#/entities/UsernameReservation" },
+      "description": "Unique username reservation registry (non-PII; no email or password)."
+    }
+  }
+}
