@@ -1,15 +1,24 @@
 # SpaceVerse 🌌
 
-**SpaceVerse** is an interactive web application that lets you explore a virtual space ecosystem. Built with modern web technologies, it showcases:
+**SpaceVerse** is an immersive, NASA‑inspired web experience that lets you explore a virtual space ecosystem across multiple conceptual maturity levels. The app combines realistic mission data, an interactive handbook, and progressive gameplay stages to guide users from a beginner’s orbit tour to advanced mission planning.
 
-- **React 19** for UI components
-- **Vite** for fast development and build tooling
-- **Three.js** for 3‑D visualisations of spacecraft, planets and missions
-- **Firebase** for authentication, storage and real‑time data
-- **Tailwind CSS** for utility‑first styling
-- **Google GenAI SDK** for AI‑powered features (e.g., mission assistance)
+### What you’ll discover
+- **Level 1 – Orbital Overview** – Fly around Earth’s orbit, learn basic orbital mechanics, and interact with a simplified spacecraft UI.
+- **Level 2 – Lunar Exploration** – Land on the Moon, conduct surface experiments, and manage limited resources.
+- **Level 3 – Mars Transit** – Plan interplanetary trajectories using NASA‑derived delta‑v charts and experience real‑time navigation challenges.
+- **Level 4 – Deep‑Space Operations** – Operate a crewed spacecraft, handle life‑support systems, and conduct scientific research in the asteroid belt.
 
-The repo you just cloned contains the full source code, assets, and configuration needed to run the app locally or deploy it to a hosting service.
+### NASA‑Based Handbook
+The built‑in handbook pulls data from publicly available NASA archives (mission timelines, vehicle specs, and scientific findings). It serves as an in‑game encyclopedia, providing detailed reference material for each mission phase and technology.
+
+### Concept Maturity Levels
+SpaceVerse was developed through four distinct Concept Maturity Levels (CML):
+1. **CML‑0 (Prototype)** – Early wireframes and basic 3‑D navigation.
+2. **CML‑1 (Alpha)** – Integrated NASA data, initial mission scripts, and basic UI.
+3. **CML‑2 (Beta)** – Full‑featured handbook, AI‑driven mission assistance, and multiplayer‑ready architecture.
+4. **CML‑3 (Release)** – Optimized performance, polished visuals, and deployment‑ready build pipeline.
+
+The repository you just cloned contains the complete source code, assets, and configuration needed to run the app locally or deploy it to a hosting service.
 
 ---
 
@@ -131,16 +140,6 @@ repo_root/
 └─ README.md             # ← This file
 ```
 
----
-
-## Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository.
-2. Create a feature branch (`git checkout -b feature/awesome‑feature`).
-3. Make your changes and ensure the project still builds (`pnpm lint && pnpm build`).
-4. Open a pull request with a clear description of the change.
 
 ---
 
