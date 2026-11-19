@@ -2,6 +2,8 @@
 
 **SpaceVerse** is an immersive, NASA‑inspired web experience that lets you explore a virtual space ecosystem across multiple conceptual maturity levels. The app combines realistic mission data, an interactive handbook, and progressive gameplay stages to guide users from a beginner’s orbit tour to advanced mission planning.
 
+**Live Demo** : https://spaceverse-3-i32b.onrender.com
+
 ![Mission Overview 2](assets/mission_overview_2.jpg)
 
 ### What you’ll discover
